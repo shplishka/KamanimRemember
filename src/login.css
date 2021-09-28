@@ -1,0 +1,24 @@
+@import 'https://fonts.googleapis.com/css?family=Heebo:400,700&subset=hebrew';
+
+body{
+  background-image: url("download.png");
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+html{
+  font-size: 100%;
+}
+
+.con {
+  flex-direction: column;
+}
+* {
+  font-family: Heebo;
+  color: white;
+}

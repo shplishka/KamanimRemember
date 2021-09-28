@@ -1,0 +1,317 @@
+@import 'https://fonts.googleapis.com/css?family=Heebo:400,700&subset=hebrew';
+@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+
+body{
+  background-image: url("download.png");
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.heading {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 8rem;
+  font-weight: 600;
+  background-image: linear-gradient(
+    109.6deg,
+    rgb(15, 122, 6) 11.2%,
+    rgb(253, 253, 253) 91.1%
+  );
+  background-size: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'Heebo', serif;
+  font-weight: bold;
+}
+.getinput {
+  margin: 30px auto;
+}
+
+.getinput Button {
+  margin-left: 20px;
+}
+
+.todolist {
+  padding: 20px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+  margin: 20px auto;
+  border-radius: 20px;
+  background-color: black;
+  box-shadow: 2px 2px 5px rgba(156, 155, 161, 0.4);
+}
+
+.todolist h3 {
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgba(70, 50, 252, 0.7);
+  width: 80px;
+  padding: 5px;
+}
+
+.delete-all {
+  margin-top: 20px;
+  max-width: 150px;
+}
+
+.nameList{
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
+  grid-gap: 0.75rem; /* To define the gap between rows/columns */
+  gap: 0.75rem;
+  padding: 0.75rem;
+  color: #fff;
+
+}
+.card_red {
+  position: relative;
+  background-image: url("red.jpg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.card_bw {
+  position: relative;
+  background-image: url("bw.jpg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}.card_yew {
+  position: relative;
+  background-image: url("yew.jpg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}.card_gre {
+  position: relative;
+  background-image: url("green.jpg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.card_red:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.card_red .content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+
+.card_bw:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.card_bw .content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.card_yew:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.card_yew .content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.card_gre:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.card_gre .content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.center_red {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0.75rem;
+  background-color: #c78e8e;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: 'Heebo', serif;
+  font-weight: normal;
+}
+
+
+.center {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.center_gre {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0.75rem;
+  background-color: #92ce9a;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: 'Heebo', serif;
+  font-weight: normal;
+}
+
+.center_yew {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0.75rem;
+  background-color: #cfd66d;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: 'Heebo', serif;
+  font-weight: normal;
+}
+
+.center_bw {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0.75rem;
+  background-color: #b1afaf;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: 'Heebo', serif;
+  font-weight: normal;
+}
+
+
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #292929;
+}
+
+.card_red:hover .overlay {
+  opacity: 1;
+}
+
+.card_bw:hover .overlay {
+  opacity: 1;
+}
+
+.card_yew:hover .overlay {
+  opacity: 1;
+}
+
+.card_gre:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.manu{
+  height: 200px;
+
+}
+
+
+
+@media (max-width: 460px) {
+  .todo-input {
+    width: 150px;
+    direction: 'rtl';
+    padding-left: 80px;
+
+  }
+  .getinput Button {
+    width: 90px;
+    font-size: 0.7rem;
+  }
+}
