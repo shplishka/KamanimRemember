@@ -159,7 +159,6 @@ export default function Login() {
           color="primary"
           size="large"
           onClick={Addtodo}
-          startIcon={<fireplaceIcon />}
         >
 הדלק נר        </Button>
 
