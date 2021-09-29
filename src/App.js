@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 //import TodoList from "./components/todoList";
 import database from "./firebase_init";
-import {jsx as _jsx} from 'react/jsx-runtime';
 
 function Home() {
   // state managment
