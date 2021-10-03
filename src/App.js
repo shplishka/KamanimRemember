@@ -14,7 +14,7 @@ function Home() {
   useEffect(() => {
     database
       .collection("memorial")
-      .orderBy('timeStamp')
+      .orderBy('timeStamp', 'desc')
       .onSnapshot((Snapshot) => {
         setNames(
           Snapshot.docs.map((todo) => ({ id: todo.id, name: todo.data().name, ploga: todo.data().ploga }))
